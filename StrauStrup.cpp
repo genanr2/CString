@@ -54,7 +54,7 @@ void StringStr::StringData::Assign(int nsz, const char* p)
 }
 std::ostream& operator<<(std::ostream&os, const StringStr*Item)
 {
-	os << Item->rep->s;// << " Refrences " << Item->rep->n;
+	os << Item->rep->s;
 	return os;
 }
 
