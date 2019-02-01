@@ -62,7 +62,7 @@ int StringStr::Length()
 {
 	return strlen(rep->s);
 }
-char* const StringStr::Str()
+const char* StringStr::Str()
 {
 	return rep->s;
 }

@@ -16,8 +16,6 @@ class StringStr
 			delete[] s;
 			n = 0;
 			sz = 0;
-//			free(s);
-//			s = nullptr;
 		}
 		StringData* GetOwnCopy();
 		void Assign(int, const char*);
@@ -44,12 +42,11 @@ public:
 	~StringStr();
 	StringStr& operator=(const char*);
 	StringStr& operator=(StringStr&);
-//	int 
 	inline Cref operator[](int);
 	inline char operator[](int) const;
 	friend std::ostream&operator<<(std::ostream&, const StringStr*);
 	int Length();
-	char* const Str();
+	const char* Str();
 private:
 	inline void Write(int, char);
 	inline int Size() const;
