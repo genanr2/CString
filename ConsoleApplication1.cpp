@@ -6,7 +6,6 @@
 using namespace std;
 #include "string.h"
 #include <atlstr.h>
-//#include "MySmart.h"
 #include "StrauStrup.h"
 
 int main()
